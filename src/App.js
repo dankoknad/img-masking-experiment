@@ -13,7 +13,7 @@ function MaskedImage({path, width, height, link}) {
             <use xlinkHref="#mask" />
           </clipPath>
           	<a xlinkHref={link} target="_blank">
-            	<image width="1920" height="1080" clipPath="url(#clipPath)" xlinkHref={path} ></image>
+            	<image width={width} height={height} clipPath="url(#clipPath)" xlinkHref={path} ></image>
           	</a>
         </g>
       </svg>
