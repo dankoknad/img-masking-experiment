@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MaskedImage({path, width, height, link}) { 
+function MaskedImage({url, width, height, link}) { 
    return (
     <div className="masked-img-container">
       <svg width={width} height={height} x="0px" y="0px" viewBox="0 0 1920 1080" >
@@ -12,7 +12,7 @@ function MaskedImage({path, width, height, link}) {
             <use xlinkHref="#mask" />
           </clipPath>
           	<a xlinkHref={link} target="_blank">
-            	<image width={width} height={height} clipPath="url(#clipPath)" xlinkHref={path} ></image>
+            	<image width={width} height={height} clipPath="url(#clipPath)" xlinkHref={url} ></image>
           	</a>
         </g>
       </svg>
@@ -26,13 +26,13 @@ function App() {
         <MaskedImage 
         	width="1920px" 
         	height="1080px" 
-        	path="http://media.marche-int.com/image/upload/q_60/karma_test/he29f9bxydz33tdm3bx5.jpg"
+        	url="http://media.marche-int.com/image/upload/q_60/karma_test/he29f9bxydz33tdm3bx5.jpg"
         	link="https://www.facebook.com/WhiteMonkeyPizza/" 
       	/>
         <MaskedImage 
         	width="1920px" 
         	height="1080px" 
-        	path="http://media.marche-int.com/image/upload/q_60/karma_test/jn2lifsk9clqqcp4f1w1.png" 
+        	url="http://media.marche-int.com/image/upload/q_60/karma_test/jn2lifsk9clqqcp4f1w1.png" 
       	/>
      </div>
     )
