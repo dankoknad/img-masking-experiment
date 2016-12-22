@@ -1,0 +1,21 @@
+{
+  "name": "img-masking-experiment",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "https://Danko-M.github.io/img-masking-experiment",
+  "devDependencies": {
+    "gh-pages": "^0.12.0",
+    "react-scripts": "0.8.4"
+  },
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "npm run build&&gh-pages -d build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
