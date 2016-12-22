@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 function MaskedImage({path, width, height, link}) { 
    return (
