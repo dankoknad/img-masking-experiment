@@ -6,6 +6,7 @@ body {
 	linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
 	background-size:30px 30px;
 	background-position:0 0, 15px 15px;
+	background-attachment: fixed;
 }
 .masked-img-container {
 	position: relative;
